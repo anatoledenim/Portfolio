@@ -1,0 +1,49 @@
+.pic-div {
+    width: 100%;
+    height: 100px;
+    margin-top: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // transform: translateY(85px);
+    &slider {
+        transform: translateY(0px);
+        transition: transform 1500ms cubic-bezier(0.1, 1.04, 0.9, 1);
+        transition-delay: 1500ms;
+    }
+    &-game {
+        width: 40px;
+        height: 40px;
+        margin-left: 35px;
+        margin-bottom: 5px;
+        filter: invert(1);
+        transition: transform 500ms;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+    }
+    &-arrow {
+        width: 100px;
+        height: 40px;
+        margin-top: 35px;
+        filter: invert(1);
+        transition: transform 500ms;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+    }
+    &-mic {
+        width: 40px;
+        height: 40px;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        filter: invert(1);
+        transition: transform 500ms;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+    }
+}

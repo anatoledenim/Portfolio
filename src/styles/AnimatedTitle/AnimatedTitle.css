@@ -1,0 +1,261 @@
+@keyframes color {
+  from {
+    color: white;
+  }
+  to {
+    color: yellow;
+  }
+}
+@keyframes capital-letter-opacity {
+  from {
+    opacity: 0;
+    margin-right: 10px;
+  }
+}
+@keyframes margin-letter-a {
+  from {
+    margin-right: 215px;
+  }
+  to {
+    margin-right: 1080px;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes first-o-slider-begin {
+  from {
+    opacity: 0;
+    left: 813px;
+  }
+}
+@keyframes first-o-slide {
+  from {
+    left: 828px;
+  }
+  to {
+    left: 725px;
+  }
+}
+@keyframes second-o-slider-begin {
+  from {
+    opacity: 0;
+    top: 160px;
+  }
+}
+@keyframes second-o-slide {
+  from {
+    left: 920px;
+  }
+  to {
+    left: 995px;
+  }
+}
+@keyframes third-o-slider-begin {
+  from {
+    opacity: 0;
+    left: 1025px;
+  }
+}
+@keyframes third-o-slide {
+  from {
+    left: 1010px;
+  }
+  to {
+    left: 1160px;
+  }
+}
+@keyframes disappear-button {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.animated-title {
+  position: relative;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surname {
+  font-family: "Rubik", sans-serif;
+  font-size: 120px;
+  color: white;
+  margin: 0px;
+  margin-left: 25px;
+}
+.surname-capital-letter {
+  margin-right: -10px;
+  animation: 1200ms ease-in-out capital-letter-opacity;
+  color: white;
+}
+.surname-natole {
+  position: absolute;
+  left: 480px;
+  animation: opacity 1200ms ease-in-out;
+  animation-delay: 700ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.surname-eni {
+  position: absolute;
+  right: 630px;
+  top: 0px;
+  animation: opacity 1500ms ease-in-out;
+  animation-delay: 800ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.surname-mal {
+  position: absolute;
+  right: 373px;
+  top: 0px;
+  animation: opacity 1500ms ease-in-out;
+  animation-delay: 900ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.surname-title-border {
+  position: absolute;
+  right: 355px;
+  top: 25px;
+  height: 110px;
+  width: 270px;
+  border-right: solid 15px yellow;
+  border-bottom: solid 15px yellow;
+  opacity: 0;
+}
+
+.letter-a {
+  margin-right: 215px;
+}
+
+.letter-d {
+  position: absolute;
+  right: 840px;
+  top: 0px;
+}
+
+.subtitle {
+  padding-left: 30px;
+  width: 300px;
+  height: 188px;
+  font-family: "Syne", sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+  opacity: 1;
+}
+.subtitle-capital-letter {
+  margin-right: -10px;
+  animation: 1200ms ease-in-out capital-letter-opacity;
+  color: white;
+}
+.subtitle-border {
+  border-bottom: solid 15px yellow;
+  opacity: 1;
+}
+.subtitle-letter-p {
+  position: absolute;
+  left: 657px;
+  animation: opacity 1500ms ease-in-out;
+  animation-delay: 1200ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.subtitle-rtf {
+  position: absolute;
+  left: 805px;
+  animation: opacity 1500ms ease-in-out;
+  animation-delay: 1200ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.subtitle-li {
+  position: absolute;
+  left: 1075px;
+  animation: opacity 1500ms ease-in-out;
+  animation-delay: 1200ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+
+.first-o {
+  position: absolute;
+  left: 828px;
+  animation: first-o-slider-begin 1500ms both;
+  animation-delay: 100ms;
+}
+.first-o-slide {
+  color: yellow;
+  transition: color 600ms ease-in-out;
+  animation: first-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-fill-mode: both;
+}
+
+.second-o {
+  position: absolute;
+  left: 920px;
+  top: 142px;
+  animation: second-o-slider-begin 1500ms both;
+  animation-delay: 100ms;
+}
+.second-o-slide {
+  color: yellow;
+  transition: color 600ms ease-in-out;
+  animation: second-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-fill-mode: both;
+}
+
+.third-o {
+  position: absolute;
+  left: 1010px;
+  animation: third-o-slider-begin 1500ms both;
+  animation-delay: 100ms;
+}
+.third-o-slide {
+  color: yellow;
+  transition: color 600ms ease-in-out;
+  animation: third-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-fill-mode: both;
+}
+
+.who-button {
+  position: absolute;
+  top: 290px;
+  left: 855px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 3px white;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  animation: capital-letter-opacity 2000ms ease-in-out;
+  transition: transform 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
+}
+.who-button:hover {
+  transform: scale(1.05);
+  border-color: yellow;
+  color: white;
+}
+.who-button-disappear {
+  animation: disappear-button 500ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-fill-mode: both;
+}/*# sourceMappingURL=AnimatedTitle.css.map */
