@@ -1,0 +1,31 @@
+.button-div {
+  position: absolute;
+  top: 450px;
+  left: 855px;
+}
+
+.who-button {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 3px white;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  animation: capital-letter-opacity 2000ms ease-in-out;
+  transition: transform 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
+}
+.who-button:hover {
+  transform: scale(1.05);
+  border-color: yellow;
+  color: white;
+}
+.who-button-disappear {
+  animation: disappear-button 500ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-fill-mode: both;
+}/*# sourceMappingURL=WhoButton.css.map */

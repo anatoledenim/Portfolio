@@ -11,13 +11,19 @@
   justify-content: space-between;
   width: 600px;
   height: 50px;
+  transform: translateY(-100px);
 }
-.navbarslider {
+.navbar-slider {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 50px;
   transform: translateY(0px);
   transition: transform 1500ms cubic-bezier(0.1, 1.04, 0.9, 1);
   transition-delay: 1500ms;
 }
-.navbar-button {
+
+.button {
   position: relative;
   text-decoration: none;
   display: flex;
@@ -28,11 +34,12 @@
   color: white;
   transition: transform 500ms;
 }
-.navbar-button:hover {
+.button:hover {
   height: 50px;
   transform: translateY(-10px);
 }
-.navbar-border-underline::before {
+
+.border-underline::before {
   content: "";
   position: absolute;
   left: 0;
@@ -45,6 +52,7 @@
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-.navbar-border-underline:hover::before {
+
+.border-underline:hover::before {
   transform: scaleX(1);
 }/*# sourceMappingURL=Header.css.map */

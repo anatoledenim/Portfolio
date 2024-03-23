@@ -14,10 +14,10 @@
 }
 @keyframes margin-letter-a {
   from {
-    margin-right: 215px;
+    margin-right: 205px;
   }
   to {
-    margin-right: 1080px;
+    margin-right: 1070px;
   }
 }
 @keyframes opacity {
@@ -102,28 +102,34 @@
 .surname-natole {
   position: absolute;
   left: 480px;
+  opacity: 0;
+}
+.surname-natole-animated {
   animation: opacity 1200ms ease-in-out;
   animation-delay: 700ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 .surname-eni {
   position: absolute;
-  right: 630px;
+  right: 625px;
   top: 0px;
+  opacity: 0;
+}
+.surname-eni-animated {
   animation: opacity 1500ms ease-in-out;
   animation-delay: 800ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 .surname-mal {
   position: absolute;
-  right: 373px;
+  right: 368px;
   top: 0px;
+  opacity: 0;
+}
+.surname-mal-animated {
   animation: opacity 1500ms ease-in-out;
   animation-delay: 900ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 .surname-title-border {
   position: absolute;
@@ -137,19 +143,30 @@
 }
 
 .letter-a {
-  margin-right: 215px;
+  margin-right: 205px;
+}
+.letter-a-slide {
+  color: yellow;
+  transition: color 600ms;
+  animation: margin-letter-a 1250ms cubic-bezier(0.1, 1.04, 0.9, 1);
+  animation-delay: 100ms;
+  animation-fill-mode: both;
 }
 
 .letter-d {
   position: absolute;
-  right: 840px;
+  right: 835px;
   top: 0px;
+}
+.letter-d-yellow {
+  color: yellow;
+  transition: color 600ms ease-in-out;
 }
 
 .subtitle {
   padding-left: 30px;
   width: 300px;
-  height: 188px;
+  height: 100px;
   font-family: "Syne", sans-serif;
   font-size: 90px;
   font-weight: 600;
@@ -169,26 +186,32 @@
 .subtitle-letter-p {
   position: absolute;
   left: 657px;
+  opacity: 0;
+}
+.subtitle-letter-p-animated {
   animation: opacity 1500ms ease-in-out;
   animation-delay: 1200ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 .subtitle-rtf {
   position: absolute;
   left: 805px;
+  opacity: 0;
+}
+.subtitle-rtf-animated {
   animation: opacity 1500ms ease-in-out;
   animation-delay: 1200ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 .subtitle-li {
   position: absolute;
   left: 1075px;
+  opacity: 0;
+}
+.subtitle-li-animated {
   animation: opacity 1500ms ease-in-out;
   animation-delay: 1200ms;
   animation-fill-mode: both;
-  animation-play-state: paused;
 }
 
 .first-o {
@@ -228,34 +251,5 @@
   color: yellow;
   transition: color 600ms ease-in-out;
   animation: third-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
-  animation-fill-mode: both;
-}
-
-.who-button {
-  position: absolute;
-  top: 290px;
-  left: 855px;
-  cursor: pointer;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: solid 3px white;
-  border-radius: 30px;
-  background-color: black;
-  color: white;
-  font-size: 25px;
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
-  animation: capital-letter-opacity 2000ms ease-in-out;
-  transition: transform 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
-}
-.who-button:hover {
-  transform: scale(1.05);
-  border-color: yellow;
-  color: white;
-}
-.who-button-disappear {
-  animation: disappear-button 500ms cubic-bezier(0.1, 1.04, 0.9, 1);
   animation-fill-mode: both;
 }/*# sourceMappingURL=AnimatedTitle.css.map */

@@ -1,3 +1,13 @@
 .home {
   width: 100%;
+  height: auto;
+}
+.home-title {
+  padding-top: 2px;
+  height: 793px;
+  position: relative;
+}
+.home-presentation {
+  height: 900px;
+  background-color: #302624;
 }/*# sourceMappingURL=Home.css.map */

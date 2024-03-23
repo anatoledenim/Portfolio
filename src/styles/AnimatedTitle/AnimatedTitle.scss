@@ -16,10 +16,10 @@
 
 @keyframes margin-letter-a {
     from {
-        margin-right: 215px;
+        margin-right: 205px;
     }
     to {
-        margin-right: 1080px;
+        margin-right: 1070px;
     }
 }
 
@@ -112,28 +112,34 @@
     &-natole {
         position: absolute;
         left: 480px;
-        animation: opacity 1200ms ease-in-out;
-        animation-delay: 700ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1200ms ease-in-out;
+            animation-delay: 700ms;
+            animation-fill-mode: both;
+        }
     }
     &-eni {
         position: absolute;
-        right: 630px;
+        right: 625px;
         top: 0px;
-        animation: opacity 1500ms ease-in-out;
-        animation-delay: 800ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1500ms ease-in-out;
+            animation-delay: 800ms;
+            animation-fill-mode: both;
+        }
     }
     &-mal {
         position: absolute;
-        right: 373px;
+        right: 368px;
         top: 0px;
-        animation: opacity 1500ms ease-in-out;
-        animation-delay: 900ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1500ms ease-in-out;
+            animation-delay: 900ms;
+            animation-fill-mode: both;
+        }
     }
     &-title-border {
         position: absolute;
@@ -148,19 +154,30 @@
 }
 
 .letter-a {
-    margin-right: 215px;
+    margin-right: 205px;
+    &-slide {
+        color: yellow;
+        transition: color 600ms;
+        animation: margin-letter-a 1250ms cubic-bezier(0.1, 1.04, 0.9, 1);
+        animation-delay: 100ms;
+        animation-fill-mode: both;
+    }
 }
 
 .letter-d {
     position: absolute;
-    right: 840px;
+    right: 835px;
     top: 0px;
+    &-yellow {
+        color: yellow;
+        transition: color 600ms ease-in-out;
+    }
 }
 
 .subtitle {
     padding-left: 30px;
     width: 300px;
-    height: 188px;
+    height: 100px;
     font-family: 'Syne', sans-serif;
     font-size: 90px;
     font-weight: 600;
@@ -179,26 +196,32 @@
     &-letter-p {
         position: absolute;
         left: 657px;
-        animation: opacity 1500ms ease-in-out;
-        animation-delay: 1200ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1500ms ease-in-out;
+            animation-delay: 1200ms;
+            animation-fill-mode: both;
+        }
     }
     &-rtf {
         position: absolute;
         left: 805px;
-        animation: opacity 1500ms ease-in-out;
-        animation-delay: 1200ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1500ms ease-in-out;
+            animation-delay: 1200ms;
+            animation-fill-mode: both;
+        }
     }
     &-li {
         position: absolute;
         left: 1075px;
-        animation: opacity 1500ms ease-in-out;
-        animation-delay: 1200ms;
-        animation-fill-mode: both;
-        animation-play-state: paused;
+        opacity: 0;
+        &-animated {
+            animation: opacity 1500ms ease-in-out;
+            animation-delay: 1200ms;
+            animation-fill-mode: both;
+        }
     }
 }
 
@@ -238,38 +261,6 @@
         color: yellow;
         transition: color 600ms ease-in-out;
         animation: third-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
-        animation-fill-mode: both;
-    }
-}
-
-.who-button {
-    position: absolute;
-    top: 290px;
-    left: 855px;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: solid 3px white;
-    border-radius: 30px;
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
-    animation: capital-letter-opacity 2000ms ease-in-out;
-    transition:
-        transform 500ms ease-in-out,
-        color 500ms ease-in-out,
-        border-color 500ms ease-in-out;
-    &:hover {
-        transform: scale(1.05);
-        border-color: yellow;
-        color: white;
-    }
-    &-disappear {
-        animation: disappear-button 500ms cubic-bezier(0.1, 1.04, 0.9, 1);
         animation-fill-mode: both;
     }
 }

@@ -1,3 +1,13 @@
 .home {
     width: 100%;
+    height: auto;
+    &-title {
+        padding-top: 2px;
+        height: 793px;
+        position: relative;
+    }
+    &-presentation {
+        height: 900px;
+        background-color: #302624;
+    }
 }
