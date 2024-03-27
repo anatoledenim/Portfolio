@@ -1,6 +1,7 @@
 import '../../styles/Footer/Footer.css'
 import github from '../../assets/logo github.webp'
 import linkedin from '../../assets/logo linkedin.jpg'
+import gmail from '../../assets/logo gmail.png'
 
 function Footer() {
     return (
@@ -18,7 +19,13 @@ function Footer() {
                         alt="linkedin"
                     ></img>
                 </a>
-                <img className="footer-img" src="" alt=""></img>
+                <a href="mailto:anatole.denimall@gmail.com?subject=Hello">
+                    <img
+                        className="footer-img gmail-logo"
+                        src={gmail}
+                        alt="gmail"
+                    ></img>
+                </a>
             </div>
         </div>
     )

@@ -1,0 +1,25 @@
+.worksection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 70px;
+  padding: 0px 50px;
+}
+.worksection-left {
+  width: 100%;
+}
+.worksection-left-img {
+  width: 90%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
+  border-radius: 10px;
+}
+.worksection-right {
+  display: flex;
+  justify-content: center;
+}
+.worksection-right-title {
+  color: white;
+}/*# sourceMappingURL=Work.css.map */

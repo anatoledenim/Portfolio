@@ -7,6 +7,7 @@ import ImagePresentation from '../../components/PresentationImage'
 import photo from '../../assets/IMG_1912.jpg'
 import '../../styles/Home/Home.css'
 import PresentationText from '../../components/PresentationText'
+import CV from '../../assets/CV.pdf'
 
 function Home() {
     // const { isActive } = useContext(ActiveContext)
@@ -41,7 +42,7 @@ function Home() {
                         />
                         <a
                             className="home-presentation-cv border-underline"
-                            href="@"
+                            href={CV}
                         >
                             Cliquez pour voir mon CV
                         </a>

@@ -17,4 +17,8 @@
   margin-right: 15px;
   margin-left: 15px;
   border-radius: 10px;
+}
+
+.gmail-logo {
+  filter: invert(1);
 }/*# sourceMappingURL=Footer.css.map */
