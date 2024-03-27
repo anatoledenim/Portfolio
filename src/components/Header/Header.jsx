@@ -19,8 +19,8 @@ function Header() {
                 <Link className="button border-underline" to={'/portfolio'}>
                     Portfolio
                 </Link>
-                <Link className="button border-underline" to={'/bonus'}>
-                    Bonus
+                <Link className="button border-underline" to={'/contact'}>
+                    Contacts
                 </Link>
             </div>
         </div>

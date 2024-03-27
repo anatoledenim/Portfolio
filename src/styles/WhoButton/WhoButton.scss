@@ -1,3 +1,19 @@
+@keyframes capital-letter-opacity {
+    from {
+        opacity: 0;
+        margin-right: 10px;
+    }
+}
+
+@keyframes disappear-button {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .button-div {
     position: absolute;
     top: 450px;

@@ -70,15 +70,6 @@
     left: 1160px;
   }
 }
-@keyframes disappear-button {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
 .animated-title {
   position: relative;
   margin-top: 150px;

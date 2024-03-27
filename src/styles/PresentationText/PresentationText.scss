@@ -1,0 +1,12 @@
+.presentation-description {
+    width: 550px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    &-text {
+        color: black;
+        font-family: 'Rubrik', sans-serif;
+        font-size: 25px;
+    }
+}
