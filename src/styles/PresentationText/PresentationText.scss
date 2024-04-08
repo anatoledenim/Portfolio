@@ -1,13 +1,13 @@
 .presentation-description {
     width: 550px;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     &-text {
         color: black;
-        font-family: 'Rubrik', sans-serif;
+        font-family: 'Syne', sans-serif;
         font-size: 25px;
     }
 }

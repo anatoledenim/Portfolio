@@ -104,9 +104,17 @@
         left: 480px;
         opacity: 0;
         &-animated {
+            position: absolute;
+            left: 480px;
+            opacity: 0;
             animation: opacity 1200ms ease-in-out;
             animation-delay: 700ms;
             animation-fill-mode: both;
+        }
+        &-stop {
+            position: absolute;
+            left: 480px;
+            opacity: 1;
         }
     }
     &-eni {
@@ -119,6 +127,12 @@
             animation-delay: 800ms;
             animation-fill-mode: both;
         }
+        &-stop {
+            position: absolute;
+            right: 625px;
+            top: 0px;
+            opacity: 1;
+        }
     }
     &-mal {
         position: absolute;
@@ -130,10 +144,16 @@
             animation-delay: 900ms;
             animation-fill-mode: both;
         }
+        &-stop {
+            position: absolute;
+            right: 368px;
+            top: 0px;
+            opacity: 1;
+        }
     }
     &-title-border {
         position: absolute;
-        right: 355px;
+        right: 330px;
         top: 25px;
         height: 110px;
         width: 270px;
@@ -152,6 +172,10 @@
         animation-delay: 100ms;
         animation-fill-mode: both;
     }
+    &-stop {
+        margin-right: 1070px;
+        color: yellow;
+    }
 }
 
 .letter-d {
@@ -161,6 +185,12 @@
     &-yellow {
         color: yellow;
         transition: color 600ms ease-in-out;
+    }
+    &-stop {
+        position: absolute;
+        right: 825px;
+        top: 0px;
+        color: yellow;
     }
 }
 
@@ -192,6 +222,11 @@
             animation-delay: 1200ms;
             animation-fill-mode: both;
         }
+        &-stop {
+            position: absolute;
+            left: 657px;
+            opacity: 1;
+        }
     }
     &-rtf {
         position: absolute;
@@ -202,6 +237,11 @@
             animation-delay: 1200ms;
             animation-fill-mode: both;
         }
+        &-stop {
+            position: absolute;
+            left: 805px;
+            opacity: 1;
+        }
     }
     &-li {
         position: absolute;
@@ -211,6 +251,11 @@
             animation: opacity 1500ms ease-in-out;
             animation-delay: 1200ms;
             animation-fill-mode: both;
+        }
+        &-stop {
+            position: absolute;
+            left: 1075px;
+            opacity: 1;
         }
     }
 }
@@ -226,6 +271,11 @@
         animation: first-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
         animation-fill-mode: both;
     }
+    &-stop {
+        position: absolute;
+        left: 725px;
+        color: yellow;
+    }
 }
 
 .second-o {
@@ -240,6 +290,12 @@
         animation: second-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
         animation-fill-mode: both;
     }
+    &-stop {
+        position: absolute;
+        left: 995px;
+        top: 142px;
+        color: yellow;
+    }
 }
 
 .third-o {
@@ -252,5 +308,11 @@
         transition: color 600ms ease-in-out;
         animation: third-o-slide 1800ms cubic-bezier(0.1, 1.04, 0.9, 1);
         animation-fill-mode: both;
+    }
+    &-stop {
+        position: absolute;
+        left: 1160px;
+        top: 142px;
+        color: yellow;
     }
 }

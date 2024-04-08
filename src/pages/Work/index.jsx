@@ -33,6 +33,32 @@ function Work() {
             </div>
             <div className="worksection-right">
                 <h1 className="worksection-right-title">{work.title}</h1>
+                <p className="worksection-right-date">
+                    Date de réalisation : {work.date}
+                </p>
+                <p className="worksection-right-tags">
+                    Compétences acquises/perfectionnées grâce à ce projet :{' '}
+                    <ul className="worksection-right-tag">
+                        {work.tags &&
+                            work.tags.map((tag, i) => (
+                                <li key={'compétence-' + i}>{tag}</li>
+                            ))}
+                    </ul>
+                </p>
+                {work.client === 'Openclassrooms' ? (
+                    <p className="worksection-right-client">
+                        Ce projet à été réalisé dans le cadre de ma formation
+                        Openclassrooms !
+                    </p>
+                ) : (
+                    <p className="worksection-right-client">
+                        Projet réalisé pour {work.client}
+                    </p>
+                )}
+                <p className="worksection-right-lien">
+                    Lien du site/repo github :{' '}
+                    <a href={work.lien}>{work.lien}</a>
+                </p>
             </div>
         </div>
     )

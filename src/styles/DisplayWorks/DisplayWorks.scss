@@ -34,7 +34,7 @@
         object-fit: cover;
         object-position: 0% 0%;
         border-radius: 15px;
-        transition: all 400ms;
+        transition: all 400ms ease-in-out;
         box-shadow: 2px 2px 10px black;
         filter: grayscale(1);
     }

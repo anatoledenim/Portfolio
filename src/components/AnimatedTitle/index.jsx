@@ -16,9 +16,9 @@ function AnimatedTitle() {
     let liClass = 'subtitle-li'
     let thirdOClass = 'subtitle-capital-letter third-o'
 
-    if (isActive) {
+    if (isActive === true) {
         letterAClass = 'surname-capital-letter letter-a-slide'
-        natoleClass = 'surname-natole surname-natole-animated'
+        natoleClass = 'surname-natole-animated'
         letterDclass = 'surname-capital-letter letter-d letter-d-yellow'
         eniClass = 'surname-eni surname-eni-animated'
         malClass = 'surname-mal surname-mal-animated'
@@ -28,6 +28,20 @@ function AnimatedTitle() {
         secondOClass = 'subtitle-capital-letter second-o second-o-slide'
         liClass = 'subtitle-li subtitle-li-animated'
         thirdOClass = 'subtitle-capital-letter third-o third-o-slide'
+    }
+
+    if (isActive === 'stop') {
+        letterAClass = 'letter-a-stop'
+        natoleClass = 'surname-natole-stop'
+        letterDclass = 'letter-d-stop'
+        eniClass = 'surname-eni-stop'
+        malClass = 'surname-mal-stop'
+        letterPClass = 'subtitle-letter-p-stop'
+        firstOClass = 'first-o-stop'
+        rtfClass = 'subtitle-rtf-stop'
+        secondOClass = 'second-o-stop'
+        liClass = 'subtitle-li-stop'
+        thirdOClass = 'third-o-stop'
     }
     return (
         <div className="animated-title">

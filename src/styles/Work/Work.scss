@@ -7,7 +7,7 @@
         width: 100%;
         &-img {
             width: 90%;
-            height: 800px;
+            height: 850px;
             object-fit: cover;
             object-position: 0% 50%;
             border-radius: 10px;
@@ -15,9 +15,112 @@
     }
     &-right {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 35px;
+        border-radius: 80% 90% 80% 90% / 20% 90% 20% 60%;
+        background-image: radial-gradient(
+            circle at 50% -20.71%,
+            #ffe6cd 0,
+            #ffe7ca 6.25%,
+            #ffe9c9 12.5%,
+            #ffebc8 18.75%,
+            #fbecc8 25%,
+            #f6eec8 31.25%,
+            #f1efc9 37.5%,
+            #ebf1cb 43.75%,
+            #e6f2cd 50%,
+            #e1f3d0 56.25%,
+            #dbf4d3 62.5%,
+            #d6f5d7 68.75%,
+            #d1f6db 75%,
+            #ccf7df 81.25%,
+            #c8f8e4 87.5%,
+            #c4f8e9 93.75%,
+            #c1f8ee 100%
+        );
         &-title {
-            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            color: black;
+            font-family: 'Rubrik', sans-serif;
+            font-size: 50px;
+            // display: inline-block;
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // background-image: radial-gradient(
+            //     circle at 50% -20.71%,
+            //     #ffe6cd 0,
+            //     #ffe7ca 6.25%,
+            //     #ffe9c9 12.5%,
+            //     #ffebc8 18.75%,
+            //     #fbecc8 25%,
+            //     #f6eec8 31.25%,
+            //     #f1efc9 37.5%,
+            //     #ebf1cb 43.75%,
+            //     #e6f2cd 50%,
+            //     #e1f3d0 56.25%,
+            //     #dbf4d3 62.5%,
+            //     #d6f5d7 68.75%,
+            //     #d1f6db 75%,
+            //     #ccf7df 81.25%,
+            //     #c8f8e4 87.5%,
+            //     #c4f8e9 93.75%,
+            //     #c1f8ee 100%
+            // );
+        }
+        &-date,
+        &-lien,
+        &-client,
+        &-tags {
+            // display: inline-block;
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // background-image: radial-gradient(
+            //     circle at 50% -20.71%,
+            //     #ffe6cd 0,
+            //     #ffe7ca 6.25%,
+            //     #ffe9c9 12.5%,
+            //     #ffebc8 18.75%,
+            //     #fbecc8 25%,
+            //     #f6eec8 31.25%,
+            //     #f1efc9 37.5%,
+            //     #ebf1cb 43.75%,
+            //     #e6f2cd 50%,
+            //     #e1f3d0 56.25%,
+
+            //     #dbf4d3 62.5%,
+            //     #d6f5d7 68.75%,
+            //     #d1f6db 75%,
+            //     #ccf7df 81.25%,
+            //     #c8f8e4 87.5%,
+            //     #c4f8e9 93.75%,
+            //     #c1f8ee 100%
+            // );
+            width: 500px;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Rubrik', sans-serif;
+            font-size: 22px;
+        }
+        &-date {
+            margin-left: 60px;
+        }
+        &-tags {
+            margin-left: 120px;
+        }
+        &-tag {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        &-client {
+            margin-left: 210px;
+        }
+        &-lien {
+            margin-left: 300px;
         }
     }
 }

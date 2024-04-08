@@ -27,6 +27,7 @@ function Portfolio() {
                                 key={data.id}
                                 picture={data.picture}
                                 alt={data.title}
+                                lien={data.lien}
                                 id={data.id}
                             />
                         )

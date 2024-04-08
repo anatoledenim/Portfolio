@@ -9,6 +9,7 @@ import BgVideo from './components/BgVideo/index.jsx'
 import { ActiveContextProvider } from './contexts/active.context.jsx'
 import Footer from './components/Footer/index.jsx'
 import Work from './pages/Work/index.jsx'
+// import WhoButton from './components/WhoButton'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -17,6 +18,7 @@ root.render(
             <ActiveContextProvider>
                 <BgVideo />
                 <Header />
+                {/* <WhoButton /> */}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />

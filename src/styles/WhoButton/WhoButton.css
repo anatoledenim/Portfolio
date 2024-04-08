@@ -42,4 +42,7 @@
 .who-button-disappear {
   animation: disappear-button 500ms cubic-bezier(0.1, 1.04, 0.9, 1);
   animation-fill-mode: both;
+}
+.who-button-stop {
+  display: none;
 }/*# sourceMappingURL=WhoButton.css.map */
