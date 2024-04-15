@@ -18,7 +18,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding-left: 35px;
-        border-radius: 80% 90% 80% 90% / 20% 90% 20% 60%;
+        border-radius: 20px;
         background-image: radial-gradient(
             circle at 50% -20.71%,
             #ffe6cd 0,
@@ -99,28 +99,39 @@
             //     #c4f8e9 93.75%,
             //     #c1f8ee 100%
             // );
-            width: 500px;
+            width: auto;
             border-radius: 10px;
             padding: 15px;
             font-family: 'Rubrik', sans-serif;
             font-size: 22px;
         }
-        &-date {
-            margin-left: 60px;
-        }
-        &-tags {
-            margin-left: 120px;
-        }
+        // &-date {
+        //     margin-left: 60px;
+        // }
+        // &-tags {
+        //     margin-left: 120px;
+        // }
         &-tag {
             display: flex;
             gap: 50px;
             list-style: none;
+            &-pic {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                width: 60%;
+                &-img {
+                    width: 80%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
-        &-client {
-            margin-left: 210px;
-        }
-        &-lien {
-            margin-left: 300px;
-        }
+        // &-client {
+        //     margin-left: 210px;
+        // }
+        // &-lien {
+        //     margin-left: 300px;
+        // }
     }
 }

@@ -44,25 +44,31 @@ function AnimatedTitle() {
         thirdOClass = 'third-o-stop'
     }
     return (
-        <div className="animated-title">
-            <h1 className="surname">
-                <span className={letterAClass}>A</span>
-                <span className={natoleClass}>NATOLE</span>
-                <span className={letterDclass}>D</span>
-                <span className={eniClass}>ENI</span>
-                <span className={malClass}>MAL</span>
-                <span className="surname-title-border"></span>
-            </h1>
-            <br />
-            <h2 className="subtitle">
-                <span className="subtitle-border"></span>
-                <span className={letterPClass}>P</span>
-                <span className={firstOClass}>O</span>
-                <span className={rtfClass}>RTF</span>
-                <span className={secondOClass}>O</span>
-                <span className={liClass}>LI</span>
-                <span className={thirdOClass}>O</span>
-            </h2>
+        <div>
+            <div className="animated-title">
+                <h1 className="surname">
+                    <span className={letterAClass}>A</span>
+                    <span className={natoleClass}>NATOLE</span>
+                    <span className={letterDclass}>D</span>
+                    <span className={eniClass}>ENI</span>
+                    <span className={malClass}>MAL</span>
+                    <span className="surname-title-border"></span>
+                </h1>
+                <br />
+                <h2 className="subtitle">
+                    <span className="subtitle-border"></span>
+                    <span className={letterPClass}>P</span>
+                    <span className={firstOClass}>O</span>
+                    <span className={rtfClass}>RTF</span>
+                    <span className={secondOClass}>O</span>
+                    <span className={liClass}>LI</span>
+                    <span className={thirdOClass}>O</span>
+                </h2>
+            </div>
+            <div className="responsive-animated-title">
+                <h1 className="responsive-surname">Anatole Denimal</h1>
+                <h2 className="responsive-subtitle">Portfolio</h2>
+            </div>
         </div>
     )
 }

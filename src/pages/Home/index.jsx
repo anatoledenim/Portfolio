@@ -25,6 +25,7 @@ function Home() {
             document.documentElement.style.overflow = 'scroll'
         }
     }, [isActive, toggleActive])
+
     return (
         <div className="home">
             <div className="home-title">
@@ -41,10 +42,12 @@ function Home() {
                         </div>
                     </div>
                     <div className="home-presentation-div">
-                        <ImagePresentation
-                            photo={photo}
-                            alt="anatole denimal(moi)"
-                        />
+                        <a href={CV} target="_blank" rel="noreferrer">
+                            <ImagePresentation
+                                photo={photo}
+                                alt="anatole denimal(moi)"
+                            />
+                        </a>
                         <a
                             className="home-presentation-cv border-underline"
                             href={CV}

@@ -1,6 +1,7 @@
 import '../../styles/Portfolio/Portfolio.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import DisplayWorks from '../../components/DisplayWorks'
+import { EndpointContext } from '../../contexts/endpoint.context'
 
 function Portfolio() {
     const [datas, setDatas] = useState([])
@@ -14,6 +15,11 @@ function Portfolio() {
         }
         fetchDatas('/works.json')
     }, [])
+
+    const { getEndpoint } = useContext(EndpointContext)
+    useEffect(() => {
+        getEndpoint()
+    }, [getEndpoint])
 
     return (
         <div className="portfolio">

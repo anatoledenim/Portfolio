@@ -22,6 +22,12 @@
   transition: transform 1500ms cubic-bezier(0.1, 1.04, 0.9, 1);
   transition-delay: 1500ms;
 }
+.navbar-stop {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 50px;
+}
 
 .button {
   position: relative;
@@ -55,4 +61,26 @@
 
 .border-underline:hover::before {
   transform: scaleX(1);
+}
+
+@media all and (max-width: 750px) {
+  .button {
+    font-size: 20px;
+    margin: 0px 20px;
+  }
+}
+@media all and (max-width: 520px) {
+  .button {
+    font-size: 15px;
+    margin: 0px 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  .navbar-stop {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .button {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Header.css.map */

@@ -44,6 +44,19 @@ function Work() {
                                 <li key={'compétence-' + i}>{tag}</li>
                             ))}
                     </ul>
+                    <ul className="worksection-right-tag-pic">
+                        {work.tagpic &&
+                            work.tagpic.map((pic, i) => (
+                                <li>
+                                    <img
+                                        className="worksection-right-tag-pic-img"
+                                        key={'pic-' + i}
+                                        alt=""
+                                        src={pic}
+                                    />
+                                </li>
+                            ))}
+                    </ul>
                 </p>
                 {work.client === 'Openclassrooms' ? (
                     <p className="worksection-right-client">

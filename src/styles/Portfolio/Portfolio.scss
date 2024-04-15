@@ -34,12 +34,26 @@
         font-family: 'Rubrik', sans-serif;
     }
     &-sectioncards {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .portfolio-sectioncards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .portfolio {
+        &-title {
+            font-size: 75px;
+        }
     }
 }
