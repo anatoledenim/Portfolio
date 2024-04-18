@@ -75,3 +75,68 @@
 .border-underline:hover::before {
     transform: scaleX(1);
 }
+
+@media all and (max-width: 1600px) {
+    .home {
+        &-presentation {
+            width: 100%;
+            &-cards {
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .home {
+        &-presentation {
+            flex-direction: column-reverse;
+            &-cards {
+                text-align: center;
+                gap: 10px;
+                &-div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .home {
+        height: 1400px;
+    }
+}
+
+@media all and (max-width: 752px) {
+    .home {
+        height: 1500px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .home {
+        height: 1550px;
+        &-presentation {
+            height: auto;
+            &-cards {
+                grid-template-columns: repeat(2, 1fr);
+                padding-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .home {
+        height: 1600px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .home {
+        height: 1130px;
+    }
+}

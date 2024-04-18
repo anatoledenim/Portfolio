@@ -78,7 +78,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .animated-title-responsive {
+  .responsive-animated-title {
     display: none;
   }
   .surname {
@@ -308,8 +308,11 @@
   .animated-title {
     display: none;
   }
+  .yellow-color {
+    color: yellow;
+  }
   .responsive-animated-title {
-    padding-top: 150px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,5 +329,41 @@
     font-size: 90px;
     font-weight: 600;
     margin: 0;
+  }
+}
+@media all and (max-width: 1200px) {
+  .responsive-surname {
+    font-size: 100px;
+  }
+  .responsive-subtitle {
+    font-size: 70px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .responsive-animated-title {
+    margin-top: 100px;
+  }
+  .responsive-surname {
+    font-size: 80px;
+  }
+  .responsive-subtitle {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 790px) {
+  .responsive-animated-title {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 450px) {
+  .responsive-animated-title {
+    margin-top: 50px;
+  }
+  .responsive-surname {
+    font-size: 50px;
+  }
+  .responsive-subtitle {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=AnimatedTitle.css.map */

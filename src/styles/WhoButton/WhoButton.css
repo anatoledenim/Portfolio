@@ -45,4 +45,10 @@
 }
 .who-button-stop {
   display: none;
+}
+
+@media all and (max-width: 1900px) {
+  .button-div {
+    display: none;
+  }
 }/*# sourceMappingURL=WhoButton.css.map */

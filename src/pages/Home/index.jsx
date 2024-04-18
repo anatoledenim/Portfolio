@@ -26,6 +26,10 @@ function Home() {
         }
     }, [isActive, toggleActive])
 
+    if (window.screen.width < 1900) {
+        document.documentElement.style.overflow = 'scroll'
+    }
+
     return (
         <div className="home">
             <div className="home-title">
@@ -33,7 +37,7 @@ function Home() {
                 <ChangeTheme />
                 <WhoButton />
                 <div className="home-presentation">
-                    <div>
+                    <div className="home-presentation-cards-div">
                         <PresentationText content="Compétences téchniques :" />
                         <div className="home-presentation-cards">
                             {liens.map((lien) => (

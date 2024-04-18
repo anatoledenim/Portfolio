@@ -16,4 +16,24 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+@media all and (max-width: 1600px) {
+  .cards {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .cards {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media all and (max-width: 450px) {
+  .cards {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=Cards.css.map */

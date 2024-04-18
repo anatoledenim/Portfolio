@@ -66,8 +66,15 @@ function AnimatedTitle() {
                 </h2>
             </div>
             <div className="responsive-animated-title">
-                <h1 className="responsive-surname">Anatole Denimal</h1>
-                <h2 className="responsive-subtitle">Portfolio</h2>
+                <h1 className="responsive-surname">
+                    <span className="yellow-color">A</span>NATOLE{' '}
+                    <span className="yellow-color">D</span>ENIMAL
+                </h1>
+                <h2 className="responsive-subtitle">
+                    P<span className="yellow-color">O</span>RTF
+                    <span className="yellow-color">O</span>LI
+                    <span className="yellow-color">O</span>
+                </h2>
             </div>
         </div>
     )

@@ -16,6 +16,10 @@ function ChangeTheme({ active }) {
     function scrollTo() {
         scroll.scrollTo(910)
     }
+
+    if (window.screen.width < 1900) {
+        divClass = 'pic-div-slider'
+    }
     return (
         <div className={divClass}>
             <img

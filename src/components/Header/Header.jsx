@@ -20,6 +20,10 @@ function Header() {
         navbarClass = 'navbar-stop'
     }
 
+    if (window.screen.width < 1900) {
+        navbarClass = 'navbar-stop'
+    }
+
     return (
         <div className="header">
             <div className={navbarClass}>

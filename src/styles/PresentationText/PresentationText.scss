@@ -11,3 +11,32 @@
         font-size: 25px;
     }
 }
+
+@media all and (max-width: 1600px) {
+    .presentation-description {
+        width: 400px;
+        &-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .presentation-description {
+        width: 80%;
+        text-align: center;
+        &-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    .presentation-description {
+        &-text {
+            font-size: 15px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+}
