@@ -1,7 +1,6 @@
 .worksection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 70px;
   padding: 0px 50px;
 }
 .worksection-left {
@@ -31,7 +30,7 @@
   font-family: "Rubrik", sans-serif;
   font-size: 50px;
 }
-.worksection-right-date, .worksection-right-lien, .worksection-right-client, .worksection-right-tags {
+.worksection-right-date, .worksection-right-lien, .worksection-right-client, .worksection-right-tags, .worksection-right-difficults {
   width: auto;
   border-radius: 10px;
   padding: 15px;
@@ -40,18 +39,58 @@
 }
 .worksection-right-tag {
   display: flex;
-  gap: 50px;
-  list-style: none;
+  gap: 40px;
 }
-.worksection-right-tag-pic {
+.worksection-right-difficult {
   display: flex;
-  align-items: center;
-  list-style: none;
-  width: 60%;
+  gap: 40px;
 }
-.worksection-right-tag-pic-img {
-  width: 80%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+@media all and (max-width: 1150px) {
+  .worksection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .worksection-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .worksection-left-img {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media all and (max-width: 650px) {
+  .worksection {
+    padding: 0px 25px;
+  }
+  .worksection-right {
+    align-items: center;
+    padding-left: 0px;
+  }
+  .worksection-right-title {
+    font-size: 35px;
+  }
+  .worksection-right-date, .worksection-right-lien, .worksection-right-client, .worksection-right-tags, .worksection-right-difficults {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .worksection-right-difficult, .worksection-right-tag {
+    gap: 30px;
+    padding: 0;
+  }
+}
+@media all and (max-width: 600px) {
+  .worksection {
+    padding: 0px 25px;
+  }
+  .worksection-right-tag, .worksection-right-difficult {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=Work.css.map */

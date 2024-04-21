@@ -41,20 +41,16 @@ function Work() {
                     <ul className="worksection-right-tag">
                         {work.tags &&
                             work.tags.map((tag, i) => (
-                                <li key={'compétence-' + i}>{tag}</li>
+                                <li key={'competence-' + i}>{tag}</li>
                             ))}
                     </ul>
-                    <ul className="worksection-right-tag-pic">
-                        {work.tagpic &&
-                            work.tagpic.map((pic, i) => (
-                                <li>
-                                    <img
-                                        className="worksection-right-tag-pic-img"
-                                        key={'pic-' + i}
-                                        alt=""
-                                        src={pic}
-                                    />
-                                </li>
+                </p>
+                <p className="worksection-right-difficults">
+                    Difficultés rencontrées :
+                    <ul className="worksection-right-difficult">
+                        {work.difficults &&
+                            work.difficults.map((difficult, i) => (
+                                <li key={'difficult-' + i}>{difficult}</li>
                             ))}
                     </ul>
                 </p>

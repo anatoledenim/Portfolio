@@ -6,6 +6,7 @@
         "picture": "https://www.cheikh-hussein.com/_next/static/media/Booki.9957ef07.webp",
         "client": "Openclassrooms",
         "tags": ["HTML/CSS", "Responsive", "frontend"],
+        "difficults": ["responsive design", "display"],
         "lien": "https://github.com/anatoledenim/Booki"
     },
     {
@@ -15,6 +16,7 @@
         "picture": "https://www.cams-code-projects.com/img-projects/sophie-bluel/sophie-bluel-picture-1.webp",
         "client": "Openclassrooms",
         "tags": ["Javascript", "Dynamique"],
+        "difficults": ["function logic", "async function"],
         "lien": "https://github.com/anatoledenim/Sophie-Bluel"
     },
     {
@@ -24,6 +26,7 @@
         "picture": "https://www.arthurpellissier.com/static/media/nina.59c1cde4294efa60aee2.webp",
         "client": "Openclassrooms",
         "tags": ["Debugging", "SEO", "Accéssibilité"],
+        "difficults": ["none"],
         "lien": "https://github.com/anatoledenim/Nina_Carducci_Portfolio"
     },
     {
@@ -33,6 +36,7 @@
         "picture": "https://portfolio-remi.fr/img/kasa.da0aba61.jpg",
         "client": "Openclassrooms",
         "tags": ["Kasa", "Frameworks"],
+        "difficults": ["composant logic", "code construction"],
         "lien": "https://github.com/anatoledenim/Kasa"
     },
     {
@@ -42,6 +46,7 @@
         "picture": "https://www.arthurpellissier.com/static/media/grimoire.1892165e9884a8e44bd7.webp",
         "client": "Openclassrooms",
         "tags": ["Backend", "Express.JS", "MongoDB"],
+        "difficults": ["routes logic", "middlewares"],
         "lien": "https://github.com/anatoledenim/Vieux_Grimoire"
     }
 ]
