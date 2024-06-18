@@ -61,6 +61,7 @@
 
 .border-underline:hover::before {
   transform: scaleX(1);
+  background-color: yellow;
 }
 
 @media all and (max-width: 750px) {

@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  height: 1675px;
+  height: 1375px;
   scroll-behavior: smooth;
 }
 .home-title {
@@ -8,22 +8,19 @@
   height: 793px;
 }
 .home-presentation {
-  border-radius: 10px;
-  height: 900px;
-  background-image: radial-gradient(circle at 50% -20.71%, #ffe6cd 0, #ffe7ca 6.25%, #ffe9c9 12.5%, #ffebc8 18.75%, #fbecc8 25%, #f6eec8 31.25%, #f1efc9 37.5%, #ebf1cb 43.75%, #e6f2cd 50%, #e1f3d0 56.25%, #dbf4d3 62.5%, #d6f5d7 68.75%, #d1f6db 75%, #ccf7df 81.25%, #c8f8e4 87.5%, #c4f8e9 93.75%, #c1f8ee 100%);
+  border-radius: 0px;
+  height: 600px;
+  background-color: #fdfd96;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-.home-presentation-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  justify-content: center;
 }
 .home-presentation-div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 150px;
+  border: solid 3px black;
 }
 .home-presentation-cv {
   color: black;
@@ -32,41 +29,43 @@
   font-family: "Syne", sans-serif;
   text-decoration: none;
   transition: all 500ms;
+  padding-bottom: 30px;
 }
 .home-presentation-cv:hover {
   transform: translateY(-10px);
   padding-bottom: 10px;
 }
 
-.border-underline::before {
+.border-underline-cv::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0px;
   height: 4px;
-  background-color: yellow;
+  background-color: black;
   border-radius: 10px;
   transform-origin: left;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 
-.border-underline:hover::before {
+.border-underline-cv:hover::before {
   transform: scaleX(1);
 }
 
-@media all and (max-width: 1600px) {
-  .home-presentation {
-    width: 100%;
-  }
-  .home-presentation-cards {
-    gap: 10px;
-  }
-}
 @media all and (max-width: 1200px) {
   .home-presentation {
     flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+  }
+  .home-presentation-div {
+    width: 250px;
+    margin: 0;
+  }
+  .home-presentation-cv {
+    font-size: 17px;
   }
   .home-presentation-cards {
     text-align: center;
@@ -87,13 +86,16 @@
   .home {
     height: 1500px;
   }
+  .home-presentation {
+    height: 700px;
+  }
 }
 @media all and (max-width: 700px) {
   .home {
     height: 1550px;
   }
   .home-presentation {
-    height: auto;
+    height: 700px;
   }
   .home-presentation-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -103,6 +105,9 @@
 @media all and (max-width: 540px) {
   .home {
     height: 1600px;
+  }
+  .home-presentation {
+    height: 800px;
   }
 }
 @media all and (max-width: 450px) {

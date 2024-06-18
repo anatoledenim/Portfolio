@@ -6,7 +6,10 @@
         "picture": "https://www.cheikh-hussein.com/_next/static/media/Booki.9957ef07.webp",
         "client": "Openclassrooms",
         "tags": ["HTML/CSS", "Responsive", "frontend"],
-        "difficults": ["responsive design", "display"],
+        "difficults": [
+            "responsive design | solution : apprentissage (modifier les width px en %",
+            "display | solution : apprentissage et jeux ludiques sur cette technologie"
+        ],
         "lien": "https://github.com/anatoledenim/Booki"
     },
     {
@@ -16,7 +19,10 @@
         "picture": "https://www.cams-code-projects.com/img-projects/sophie-bluel/sophie-bluel-picture-1.webp",
         "client": "Openclassrooms",
         "tags": ["Javascript", "Dynamique"],
-        "difficults": ["function logic", "async function"],
+        "difficults": [
+            "function logic | solution : discussion avec mon mentor et tests",
+            "async function | solution : visionnage de vidéos sur le sujet, apprentissage via Openclassrooms"
+        ],
         "lien": "https://github.com/anatoledenim/Sophie-Bluel"
     },
     {
@@ -36,7 +42,10 @@
         "picture": "https://portfolio-remi.fr/img/kasa.da0aba61.jpg",
         "client": "Openclassrooms",
         "tags": ["Kasa", "Frameworks"],
-        "difficults": ["composant logic", "code construction"],
+        "difficults": [
+            "composant logic | solution : visionnage de vidéos sur le sujet, apprentissage via Openclassrooms",
+            "code construction | solution : discussion avec mon mentor et tests"
+        ],
         "lien": "https://github.com/anatoledenim/Kasa"
     },
     {
@@ -46,7 +55,10 @@
         "picture": "https://www.arthurpellissier.com/static/media/grimoire.1892165e9884a8e44bd7.webp",
         "client": "Openclassrooms",
         "tags": ["Backend", "Express.JS", "MongoDB"],
-        "difficults": ["routes logic", "middlewares"],
+        "difficults": [
+            "routes logic | solution : discussion avec des étudiatns sur le sujet",
+            "middlewares | solution : visionnage de vidéos sur le sujet, apprentissage via Openclassrooms"
+        ],
         "lien": "https://github.com/anatoledenim/Vieux_Grimoire"
     }
 ]
